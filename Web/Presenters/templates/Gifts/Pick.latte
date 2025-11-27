@@ -25,7 +25,7 @@
             </strong>
 
             <strong class="gift_limit">
-                {if $gift->getUsagesLeft($thisUser) !== INF}
+                {if $gift->getUsagesLeft($thisUser) !== \INF}
                     {tr("gifts_left", $gift->getUsagesLeft($thisUser))}
                 {/if}&nbsp;
             </strong>
@@ -37,7 +37,7 @@
             "page"    => $page,
             "count"   => $count,
             "amount"  => sizeof($gifts),
-            "perPage" => OPENVK_DEFAULT_PER_PAGE,
+            "perPage" => \OPENVK_DEFAULT_PER_PAGE,
         ]}
     </div>
 {/block}
